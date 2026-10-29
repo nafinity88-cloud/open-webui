@@ -1,0 +1,64 @@
+/* BMICorp AI-Assistant brand accents (green + gold) — accent-only theme */
+:root {
+	--bmi-green: #2e6b4a;
+	--bmi-green-dark: #1e4a30;
+	--bmi-green-deep: #0f2a1d;
+	--bmi-gold: #c9a227;
+	--bmi-gold-hover: #a8861b;
+	--bmi-gold-light: #f5d67b;
+	--bmi-cream: #f7f5ee;
+}
+
+/* Primary CTA buttons (app uses bg-gray-900 pattern) → BMI green */
+button.bg-gray-900,
+a.bg-gray-900 {
+	background-color: var(--bmi-green-dark) !important;
+	border-color: var(--bmi-green-dark) !important;
+}
+button.bg-gray-900:hover,
+a.bg-gray-900:hover {
+	background-color: var(--bmi-green) !important;
+	border-color: var(--bmi-green) !important;
+}
+.dark button.bg-gray-900,
+.dark a.bg-gray-900 {
+	background-color: var(--bmi-gold) !important;
+	border-color: var(--bmi-gold) !important;
+	color: #0f2a1d !important;
+}
+.dark button.bg-gray-900:hover,
+.dark a.bg-gray-900:hover {
+	background-color: var(--bmi-gold-light) !important;
+	border-color: var(--bmi-gold-light) !important;
+}
+
+/* Sidebar active indicator bar → gold */
+#sidebar .my-auto.rounded-r-lg.w-1.h-8.bg-black,
+#sidebar .my-auto.rounded-r-lg.w-1.h-8.bg-white {
+	background-color: var(--bmi-gold) !important;
+}
+
+/* Focus rings → gold */
+*:focus-visible {
+	outline-color: var(--bmi-gold) !important;
+}
+input[type='checkbox']:focus {
+	--tw-ring-color: var(--bmi-gold) !important;
+}
+
+/* Scrollbar accent (webkit) */
+::-webkit-scrollbar-thumb {
+	background: color-mix(in srgb, var(--bmi-green) 55%, transparent);
+	border-radius: 8px;
+}
+.dark ::-webkit-scrollbar-thumb {
+	background: color-mix(in srgb, var(--bmi-gold) 55%, transparent);
+}
+
+/* Splash progress bar → gold on green */
+#progress-bar {
+	background-color: var(--bmi-gold) !important;
+}
+#progress-background {
+	background-color: color-mix(in srgb, var(--bmi-gold) 25%, transparent) !important;
+}

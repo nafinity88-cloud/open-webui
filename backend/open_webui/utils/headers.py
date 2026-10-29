@@ -185,7 +185,7 @@ async def get_headers_and_cookies(
                 # Do not alter, remove, obscure, or replace it except as LICENSE permits:
                 # https://docs.openwebui.com/license.
                 'HTTP-Referer': 'https://openwebui.com/',
-                'X-Title': 'Open WebUI',
+                'X-Title': 'BMICorp AI-Assistant',
             }
             if 'openrouter.ai' in url
             else {}
